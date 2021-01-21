@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : Adam Parker
+  @group             : 
+  @last modified on  : 12-14-2020
+  @last modified by  : Adam Parker
+  Modifications Log 
+  Ver   Date         Author        Modification
+  1.0   12-08-2020   Adam Parker   Initial Version
+-->
+<template>
+    <lightning-datatable 
+    key-field="Id" 
+    data={results} 
+    columns={columns} 
+    hide-checkbox-column	="false"
+    show-row-number-column="true"
+    onsort={updateColumnSorting}
+    sorted-by={sortBy}
+    sorted-direction={sortDirection}
+    row-number-offset	="0" >
+   </lightning-datatable>
+  </template>
